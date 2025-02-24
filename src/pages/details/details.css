@@ -1,0 +1,25 @@
+.singlePage {
+    padding: 50px 0;
+    background: #fff;
+}
+.singlePage .right {
+  margin-top: 30px;
+}
+.singlePage img {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;   
+  border-radius: 10px;
+}
+.singlePage h1 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.singlePage p {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: capitalize;
+}
