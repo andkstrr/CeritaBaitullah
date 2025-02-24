@@ -1,4 +1,5 @@
 import React from 'react'
+import LogoBaitullahPutih from '../../assets/images/logo-baitullah putih.png'
 import './footer.css'
 
 const Footer = () => {
@@ -9,16 +10,11 @@ const Footer = () => {
           {/* Kolom 1 */}
           <div className="footer-col">
             <a href="#">
-              <img
-                src="../assets/images/logo/logo-baitullah-white.png"
-                alt="Logo"
-                className="footer-logo"
-              />
+              <img src={LogoBaitullahPutih} alt="Cerita Baitullah" width="150px" />
             </a>
             <p className="footer-desc">
-              <strong>Download</strong> aplikasi untuk mendapatkan banyak kemudahan
+              <strong>Download</strong> aplikasi untuk <br /> mendapatkan banyak kemudahan
             </p>
-            <a href="#" className="footer-btn">Daftar</a>
             <div className="footer-partner">
               <i className="fa-solid fa-handshake footer-icon"></i>
               <span>Rekan Usaha Baitullah</span>
