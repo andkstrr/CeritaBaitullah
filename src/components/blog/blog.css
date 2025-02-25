@@ -2,6 +2,9 @@
   margin: 50px 0;
 }
 .blog .boxItems {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
   transition: 0.5s;
 }
 .blog .boxItems:hover {
@@ -16,12 +19,8 @@
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.blog .icon {
-  margin-right: 10px;
-  font-size: 20px;
-}
 .blog .tag a {
-  color: blue;
+  color: rgb(0, 47, 0);
   opacity: 0.7;
 }
 .blog .tag {

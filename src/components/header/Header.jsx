@@ -11,7 +11,7 @@ const Header = () => {
     <header>
       <div className="content-nav flex">
         <div className="logo">
-          <img src={LogoCeritaBaitullah} alt="Cerita Baitullah" width="120px" />
+          <Link to="/"><img src={LogoCeritaBaitullah} alt="Cerita Baitullah" width="120px" /></Link>
         </div>
         <nav>
           <ul>

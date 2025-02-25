@@ -23,7 +23,7 @@ export const nav = [
   export const category = [
     {
       id: 1,
-      category: "Life",
+      category: "Tips",
       title: "Stay Calm And Surf",
       cover: "../images/category/ca1.png",
     },
@@ -73,20 +73,20 @@ export const nav = [
   export const blog = [
     {
       id: 1,
-      title: "POST NO.1 CONTAINING A YOUTUBE VIDEO",
-      desc: "Quisque at tellus nec magna viverra euismod. Maecenas lobortis, nisl et sodales blandit, neque mi ullamcorper eros, id efficitur ex velit in ante. Suspendisse elementum congue lacus quis gravida. Nunc eu hendrerit risus. Quisque blandit, orci non maximus vulputate, ligula ante ornare enim, ac interdum lorem leo varius mauris. Aliquam non sem vel orci malesuada sagittis. Vivamus id ullamcorper tellus. In hac habitasse platea dictumst. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et sapien a arcu feugiat mattis. Suspendisse sed magna quis turpis rhoncus venenatis.",
-      category: "Nature",
+      title: "3 Amalan di Bulan Ramadhan Yang Bisa Menambah Pahala",
+      desc: "Bulan Ramadan adalah bulan yang penuh keberkahan dan rahmat dari Allah SWT. Pada bulan ramadhan ini, pintu-pintu surga dibuka, pintu-pintu neraka ditutup, dan setiap amal kebaikan akan dilipatgandakan pahalanya. Rasulullah ṣallallāhu 'alayhi wa sallam bersabda:",
+      category: "Tips",
       cover: "../images/blogs/b1.jpg",
-      date: "APRIL 05, 2018",
+      date: "24 Februari 2025",
     },
   
     {
       id: 2,
-      title: "JUPITER IS FULL OF WATERFALLS SO EARLY",
+      title: "Wajib Praktik! 12 Cara Antimager Khatam Al-Qur'an di Bulan Ramadhan",
       desc: "Vestibulum suscipit nibh sed odio pharetra, condimentum lacinia nisi varius. Ut ac ornare diam. Suspendisse vitae quam risus. Nulla ullamcorper libero justo, vitae dictum est efficitur id. Aenean et lacinia arcu. Sed non dolor id risus dapibus congue. Quisque tincidunt vitae tellus ut malesuada. Nulla eleifend nibh a maximus consectetur. Duis et mi porta, bibendum leo non, fermentum enim. Vivamus sed diam suscipit, ultricies ipsum sed, efficitur dui. Sed pharetra purus at iaculis vehicula. Fusce pellentesque placerat ante, id elementum dolor maximus sed. Aenean viverra at lectus quis vehicula. Aenean at arcu odio. Etiam mauris justo, cursus finibus aliquam eget, fermentum nec nulla. Sed finibus viverra magna non sagittis. Mauris fringilla augue vel quam rhoncus, in tempor enim lacinia. Donec nibh velit, scelerisque id neque sit amet, ornare consectetur sem. Donec convallis nec justo id consequat. Donec sem leo, pulvinar sit amet nisi a, mollis gravida est. Duis porttitor eleifend cursus. Vivamus ac dapibus dolor. Nullam leo tellus, rhoncus sit amet tempor vel, malesuada vel augue. Morbi laoreet sem eget tortor pulvinar mattis. Maecenas commodo ultricies orci, ut blandit urna accumsan sit amet. Ut a porttitor orci, maximus feugiat turpis. In eu sodales orci, et volutpat felis. Quisque orci quam, gravida at nulla tempor, vulputate pretium magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent congue, magna vitae interdum blandit, arcu mauris placerat nulla, sit amet rhoncus justo risus in neque.",
       category: "Nature",
       cover: "../images/blogs/b2.jpg",
-      date: "MARCH 15, 2018",
+      date: "17 Februari 2025",
     },
     {
       id: 3,

@@ -1,25 +1,55 @@
-.singlePage {
-    padding: 50px 0;
-    background: #fff;
+.singlePage .container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start;
+  gap: 20px; 
 }
-.singlePage .right {
-  margin-top: 30px;
+.singlePage .headerBlog {
+  margin-bottom: 20px;
 }
-.singlePage img {
-  width: 50%;
-  height: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;   
+.content-left img {
+  width: 100%;  /* Gambar akan menyesuaikan lebar container */
+  max-width: 100%; /* Mencegah gambar melebihi ukuran aslinya */
+  height: auto; /* Menjaga aspek rasio */
+  display: block; /* Menghindari adanya ruang kosong bawah gambar */
+  margin: 20px 0; /* Beri jarak atas dan bawah agar lebih rapi */
   border-radius: 10px;
 }
-.singlePage h1 {
-  font-size: 30px;
-  font-weight: 500;
+
+/* Bagian kiri (70%) */
+.content-left {
+  width: 70%;
 }
-.singlePage p {
-  margin: 20px 0;
-  font-size: 18px;
-  line-height: 2;
-  text-transform: capitalize;
+.desc {
+  text-align: justify;
+}
+.btn-category {
+  background-color: rgb(0, 66, 0);
+  color: white;
+  padding: 5px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.credit {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+.author, .date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Bagian kanan (30%) */
+.content-right {
+  width: 30%;
+  background: #f9f9f9; 
+  border-radius: 10px;
 }
