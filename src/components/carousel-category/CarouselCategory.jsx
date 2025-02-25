@@ -44,7 +44,7 @@ const SamplePrevArrow = (props) => {
 };
 
 // Main Component
-const Category = () => {
+const CarouselCategory = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -96,4 +96,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default CarouselCategory;

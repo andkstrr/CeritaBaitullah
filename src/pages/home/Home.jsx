@@ -1,10 +1,10 @@
 import React from 'react'
-import Category from '../../components/category/Category'
+import CarouselCategory from '../../components/carousel-category/CarouselCategory'
 
 const Home = () => {
   return (
     <>
-      <Category />
+      <CarouselCategory />
     </>
   )
 }
