@@ -1,5 +1,6 @@
 import React from 'react'
 import LogoBaitullahPutih from '../../assets/images/logo-baitullah putih.png'
+import { AiOutlineInstagram, AiFillYoutube, AiFillFacebook, AiOutlineTikTok } from 'react-icons/ai'
 import './footer.css'
 
 const Footer = () => {
@@ -12,20 +13,9 @@ const Footer = () => {
             <a href="#">
               <img src={LogoBaitullahPutih} alt="Cerita Baitullah" width="150px" />
             </a>
-            <p className="footer-desc">
+            <p className="footer-text">
               <strong>Download</strong> aplikasi untuk <br /> mendapatkan banyak kemudahan
             </p>
-            <div className="footer-partner">
-              <i className="fa-solid fa-handshake footer-icon"></i>
-              <span>Rekan Usaha Baitullah</span>
-            </div>
-            <a href="hijraPage.html" className="footer-partner-link">
-              <img
-                src="../assets/images/logo/logo-rekan-usaha-baitullah-01.png"
-                alt="Hijra Bank"
-                className="footer-partner-img"
-              />
-            </a>
           </div>
 
           {/* Kolom 2 */}
@@ -41,10 +31,10 @@ const Footer = () => {
           {/* Kolom 3 */}
           <div className="footer-col">
             <h3 className="footer-title">Produk</h3>
-            <a href="umrohPage.html" className="footer-link">Umroh</a>
-            <a href="umrohPlusPage.html" className="footer-link">Umroh Plus</a>
-            <a href="hajiKhususPage.html" className="footer-link">Haji Khusus</a>
-            <a href="wisataHalalPage.html" className="footer-link">Wisata Halal</a>
+            <p className="footer-text">Umroh</p>
+            <p className="footer-text">Umroh Plus</p>
+            <p className="footer-text">Haji Khusus</p>
+            <p className="footer-text">Wisata Halal</p>
           </div>
 
           {/* Kolom 4 */}
@@ -53,7 +43,7 @@ const Footer = () => {
             <p className="footer-text">Telepon: +62 817-007-7070</p>
             <p className="footer-text">Email: info@baitullah.co.id</p>
             <p className="footer-text">
-              Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga Kementerian Perdagangan Republik Indonesia
+              Direktorat Jenderal Perlindungan Konsumen dan Tertib Niaga Kementerian Perdagangan Republik Indonesia 
             </p>
             <p className="footer-text">WhatsApp: +62 853-1111-1010</p>
           </div>
@@ -63,14 +53,14 @@ const Footer = () => {
         <hr className="footer-divider" />
         <div className="footer-bottom">
           <div className="footer-social">
-            <a href="#"><img src="../assets/images/icon/icon-sosial-media-instagram-02.svg" alt="Instagram" /></a>
-            <a href="#"><img src="../assets/images/icon/icon-sosial-media-youtube-04.svg" alt="YouTube" /></a>
-            <a href="#"><img src="../assets/images/icon/icon-sosial-media-facebook-01.svg" alt="Facebook" /></a>
-            <a href="#"><img src="../assets/images/icon/icon-sosial-media-tiktok-03.svg" alt="TikTok" /></a>
+              <AiOutlineInstagram size={25} />
+              <AiFillYoutube size={25} />
+              <AiFillFacebook size={25} />
+              <AiOutlineTikTok size={25} />
           </div>
-          <p className="footer-copyright">© 2024 <strong>Baitullah.co.id.</strong> All Rights Reserved</p>
+          <p className="footer-copyright">© 2025 <strong>Baitullah.co.id.</strong> All Rights Reserved</p>
           <div className="footer-policy">
-            <a href="#">Privacy Policy</a> • <a href="#">Terms & Condition</a>
+            <p className="footer-text">Privacy Policy Terms & Condition</p>
           </div>
         </div>
       </div>
