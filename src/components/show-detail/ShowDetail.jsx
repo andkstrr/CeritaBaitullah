@@ -21,7 +21,7 @@ const DetailBlog = () => {
   return (
     <>
       {blogs ? (
-        <section className="singlePage">
+        <section className="detailPage">
           <div className="container">
             {/* Bagian Kiri - 60% */}
             <div className="content-left">

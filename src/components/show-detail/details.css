@@ -1,10 +1,11 @@
-.singlePage .container {
+.detailPage .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between; 
   align-items: flex-start;
   gap: 20px; 
 }
-.singlePage .headerBlog {
+.detailPage .headerBlog {
   margin-bottom: 20px;
 }
 .content-left img {
@@ -18,7 +19,7 @@
 
 /* Bagian kiri (70%) */
 .content-left {
-  width: 70%;
+  width: 60%;
 }
 .desc {
   text-align: justify;
