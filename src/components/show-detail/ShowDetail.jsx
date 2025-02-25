@@ -1,8 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { FaUser, FaCalendar } from 'react-icons/fa'
-import { Link } from 'react-router'
-import { useParams } from 'react-router'
-import { useEffect } from 'react'
+import { Link, useParams } from 'react-router'
 import { blog } from '../../assets/data/data'
 import './details.css'
 import '../../index.css'
@@ -12,18 +10,15 @@ const DetailBlog = () => {
   const [blogs, setBlogs] = useState(null)
 
   useEffect(() => {
-    let blogs = blog.find((blogs) => blogs.id === parseInt(id))
-    if (blogs) {
-      setBlogs(blogs)
-    }
-  }, [])
+    const foundBlog = blog.find((item) => item.id === Number(id))
+    setBlogs(foundBlog || null)  // Jika tidak ditemukan, set ke null
+  }, [id])  // Tambahkan id sebagai dependensi
 
   return (
     <>
       {blogs ? (
         <section className="detailPage">
           <div className="container">
-            {/* Bagian Kiri - 60% */}
             <div className="content-left">
               <div className="headerBlog">
                 <p className="btn-category">{blogs.category}</p>
@@ -31,7 +26,7 @@ const DetailBlog = () => {
                 <div className="credit">
                   <div className="author">
                     <FaUser size={15} color="gray" />
-                    <p><Link to="/naswa-baitullah" >Naswa</Link></p>
+                    <p><Link to="/naswa-baitullah" className="author-name">Naswa</Link></p>
                   </div>
                   <div className="date">
                     <FaCalendar size={15} color="gray" />
@@ -39,17 +34,23 @@ const DetailBlog = () => {
                   </div>
                 </div>
               </div>
-              <img src={blogs.cover} alt="Blog Cover" />
+              {/* Pastikan src memiliki nilai valid */}
+              {blogs.cover ? (
+                <img src={blogs.cover} alt="Blog Cover" />
+              ) : (
+                <p>Gambar tidak tersedia</p>
+              )}
               <p className="desc">{blogs.desc}</p>
             </div>
 
-            {/* Bagian Kanan - 40% */}
             <div className="content-right">
               <p>Ini adalah area untuk konten di sebelah kanan. wkwkwkwkw</p>
             </div>
           </div>
         </section>
-      ) : null}
+      ) : (
+        <p>Blog tidak ditemukan</p>
+      )}
     </>
   )
 }

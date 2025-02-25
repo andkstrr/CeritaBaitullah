@@ -1,7 +1,7 @@
 import React from "react"
 import { blog } from "../../assets/data/data"
-import { AiOutlineTags, AiOutlineClockCircle, AiOutlineEdit, } from "react-icons/ai"
 import { Link } from "react-router"
+import { AiOutlineTags, AiOutlineClockCircle, AiOutlineEdit, } from "react-icons/ai"
 import "./card.css"
 
 const Card = () => {
@@ -11,9 +11,9 @@ const Card = () => {
         <div className='container grid3'>
           {blog.map((item) => (
             <div className='box boxItems' key={item.id}>
-              <div className='img'>
+              <div className='img-wrapper'>
                 <Link to={`/blog/read/${item.id}`} className='link'>
-                  <img src={item.cover} alt='' />
+                  <img className="img" src={item.cover} alt='' />
                 </Link>
               </div>
               <div className='blog-read'> 
@@ -23,12 +23,14 @@ const Card = () => {
                 </div>
                 <Link to={`/blog/read/${item.id}`} className='link'>
                   <h3>{item.title}</h3>
+                  <p>{item.desc.slice(0, 180)}...</p>
                 </Link>
-                <p>{item.desc.slice(0, 180)}...</p>
-                <div className='date'>
-                  <AiOutlineEdit className='icon' /> <label htmlFor=''>{item.author}</label>
-                  <AiOutlineClockCircle className='icon' /> <label htmlFor=''>{item.date}</label>
-                </div>
+                <Link to="/naswa-baitullah">
+                    <div className='date'>
+                      <AiOutlineEdit className='icon-bottom' /> <label htmlFor=''>{item.author}</label>
+                      <AiOutlineClockCircle className='icon-bottom' /> <label htmlFor=''>{item.date}</label>
+                    </div>
+                </Link>
               </div>
             </div>
           ))}

@@ -21,6 +21,14 @@
 .content-left {
   width: 60%;
 }
+.author-name {
+  color: #5A5A5A;
+  transition: 0.3s;
+}
+.author-name:hover {
+  color: rgb(0, 66, 0);
+  font-weight: 600;
+}
 .desc {
   text-align: justify;
 }

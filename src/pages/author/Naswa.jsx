@@ -1,9 +1,10 @@
 import React from 'react'
+import Author from '../../components/show-author/Author'
 
 const Naswa = () => {
   return (
     <>
-      <div className="container">Halo, ini halaman Kakak Naswa</div>
+      <Author />
     </>
   )
 }
