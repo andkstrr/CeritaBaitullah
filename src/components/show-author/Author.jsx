@@ -1,5 +1,5 @@
 import React from 'react'
-import NaswaProfile from '../../../public/images/blogs/naswa.png'
+import NaswaProfile from '../../../public/images/author/naswa.png'
 import './author.css'
 
 const Author = () => {
@@ -27,4 +27,4 @@ const Author = () => {
   );
 };
 
-export default Author;
+export default Author

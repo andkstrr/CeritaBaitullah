@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { FaUser, FaCalendar } from 'react-icons/fa'
 import { Link, useParams } from 'react-router'
 import { blog } from '../../assets/data/data'
+import NewsCard from '../news-card/NewsCard'
+import SearchInput from '../search-input/SearchInput'
 import './details.css'
 import '../../index.css'
 
@@ -34,7 +36,6 @@ const DetailBlog = () => {
                   </div>
                 </div>
               </div>
-              {/* Pastikan src memiliki nilai valid */}
               {blogs.cover ? (
                 <img src={blogs.cover} alt="Blog Cover" />
               ) : (
@@ -44,7 +45,41 @@ const DetailBlog = () => {
             </div>
 
             <div className="content-right">
-              <p>Ini adalah area untuk konten di sebelah kanan. wkwkwkwkw</p>
+              <SearchInput 
+              
+              />
+              <div className="category-card">
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
+                  text="KABAR HAJI & UMRAH"
+                  link="/blog/read/category/kabar haji umroh"
+                />
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-khazanah-01.webp"
+                  text="KHAZANAH"
+                  link="/blog/read/category/khazanah"
+                />
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-tips-1.webp"
+                  text="TIPS"
+                  link="/blog/read/category/tips"
+                />
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-kisah-01.webp"
+                  text="KISAH"
+                  link="/blog/read/category/kisah"
+                />
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-doa-01.webp"
+                  text="DOA"
+                  link="/blog/read/category/doa"
+                />
+                <NewsCard
+                  imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
+                  text="PERJALANAN"
+                  link="/blog/read/category/perjalanan"
+                />
+              </div>
             </div>
           </div>
         </section>
