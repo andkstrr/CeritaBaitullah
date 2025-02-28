@@ -1,7 +1,7 @@
 import React from 'react'
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router"
+import { BrowserRouter, Routes, Route } from 'react-router'
 import Header from './components/header/Header'
+import Nav from './components/nav/Nav'
 import Home from './pages/home/Home'
 import About from './pages/about/About'
 import Blog from './pages/blog/Blog'
@@ -17,6 +17,7 @@ const App = () => {
     <>
       <BrowserRouter>
           <Header />
+          <Nav />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
