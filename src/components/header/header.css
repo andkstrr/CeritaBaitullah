@@ -14,3 +14,14 @@ header {
     align-items: center;
     gap: 18px;
 }
+
+.search-header {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+.search-header input {
+    color: white;
+    font-size: 16px;
+}

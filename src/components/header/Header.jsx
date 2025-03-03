@@ -1,8 +1,8 @@
 import React from 'react'
+import SearchInput from '../search-input/SearchInput'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { GrInstagram } from "react-icons/gr";
-import { FaFacebook, FaYoutube, FaTiktok } from 'react-icons/fa'
-
+import { FaFacebook, FaYoutube, FaTiktok, FaSearch } from 'react-icons/fa'
 import './header.css'
 
 const Header = () => {
@@ -16,6 +16,13 @@ const Header = () => {
             <FaYoutube color="#fff" size={19} />
             <GrInstagram color="#fff" size={14} />
             <FaTiktok color="#fff" size={15} />
+          </div>
+
+          <div className="search-header">
+            <div className="search-wrapper">
+              <input placeholder="Cari Artikel . . ." />
+              <FaSearch size={15} color="#fff" />
+            </div>
           </div>
         </div>
       </header>

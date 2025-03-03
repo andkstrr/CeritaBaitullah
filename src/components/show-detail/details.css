@@ -63,3 +63,14 @@
   background: #f9f9f9; 
   border-radius: 10px;
 }
+
+.category-card {
+  margin-bottom: 25px;
+}
+
+.media-card {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 300px;
+  margin: auto; 
+}

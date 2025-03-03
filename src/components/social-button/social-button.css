@@ -1,0 +1,14 @@
+.social-button {
+    display: flex;
+    gap: 10px;
+    background-color: #d9e9e9;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-button .media-icon, .media-name {
+    color: rgb(0, 44, 0);
+    font-size: 15px;
+    font-weight: 500;
+}
+

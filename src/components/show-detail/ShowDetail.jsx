@@ -2,9 +2,11 @@ import React, { useState, useEffect } from 'react'
 import { FaUser, FaCalendar } from 'react-icons/fa'
 import { Link, useParams } from 'react-router'
 import { blog } from '../../assets/data/data'
+import { FaFacebook, FaYoutube, FaTiktok, FaInstagram } from 'react-icons/fa'
 import NewsCard from '../news-card/NewsCard'
 import SearchInput from '../search-input/SearchInput'
 import TitleLine from '../title-line/TitleLine'
+import SocialButton from '../social-button/SocialButton'
 import './details.css'
 import '../../index.css'
 
@@ -49,35 +51,69 @@ const DetailBlog = () => {
               <SearchInput />
               <TitleLine title="Kategori" />
               <div className="category-card">
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
-                  text="KABAR HAJI & UMRAH"
-                  link="/blog/read/category/kabar haji umroh"
+                <ul>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
+                        text="KABAR HAJI & UMRAH"
+                        link="/blog/read/category/kabar haji umroh"
+                      />
+                  </li>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-khazanah-01.webp"
+                        text="KHAZANAH"
+                        link="/blog/read/category/khazanah"
+                      />
+                  </li>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-tips-1.webp"
+                        text="TIPS"
+                        link="/blog/read/category/tips"
+                      />
+                  </li>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-kisah-01.webp"
+                        text="KISAH"
+                        link="/blog/read/category/kisah"
+                      />
+                  </li>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-doa-01.webp"
+                        text="DOA"
+                        link="/blog/read/category/doa"
+                      />
+                  </li>
+                  <li>
+                      <NewsCard
+                        imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
+                        text="PERJALANAN"
+                        link="/blog/read/category/perjalanan"
+                      />
+                  </li>
+                </ul>
+              </div>
+
+              <TitleLine title="Media Sosial" />
+              <div className="media-card">
+                <SocialButton 
+                  Icon={<FaFacebook />}
+                  SocialMedia="Facebook"
                 />
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-khazanah-01.webp"
-                  text="KHAZANAH"
-                  link="/blog/read/category/khazanah"
+                <SocialButton
+                  Icon={<FaYoutube />}
+                  SocialMedia="Youtube"
                 />
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-tips-1.webp"
-                  text="TIPS"
-                  link="/blog/read/category/tips"
+                <SocialButton 
+                  Icon={<FaInstagram />}
+                  SocialMedia="Instagram"
                 />
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-kisah-01.webp"
-                  text="KISAH"
-                  link="/blog/read/category/kisah"
-                />
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-doa-01.webp"
-                  text="DOA"
-                  link="/blog/read/category/doa"
-                />
-                <NewsCard
-                  imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"
-                  text="PERJALANAN"
-                  link="/blog/read/category/perjalanan"
+                <SocialButton
+                  Icon={<FaTiktok />}
+                  SocialMedia="Tiktok"
                 />
               </div>
             </div>
