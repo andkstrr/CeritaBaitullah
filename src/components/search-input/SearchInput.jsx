@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-// import { Search } from 'lucide-react'
+import { FaSearch } from 'react-icons/fa'
 import './searchinput.css'
 
 const SearchInput = ({ placeholder, onSearch }) => {
@@ -21,7 +21,7 @@ const SearchInput = ({ placeholder, onSearch }) => {
         onChange={(e) => setQuery(e.target.value)}
       />
       <button className="search-button" onClick={handleSearch}>
-        {/* <Search size={18} /> */}
+        <FaSearch size={13} />
       </button>
     </div>
   );

@@ -5,12 +5,12 @@
     border-radius: 4px;
     overflow: hidden;
     width: 260px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   
   .search-input {
     flex: 1;
-    padding: 10px 20px;
+    padding: 17px 20px;
     border: none;
     outline: none;
     font-size: 15px;
@@ -23,9 +23,11 @@
   .search-button {
     background-color: #1d4d2c;
     border: none;
-    padding: 10px;
+    padding: 8px 10px;
     cursor: pointer;
     display: flex;
+    margin-right: 20px;
+    border-radius: 5px;
     align-items: center;
     justify-content: center;
   }

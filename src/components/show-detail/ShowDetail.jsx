@@ -4,6 +4,7 @@ import { Link, useParams } from 'react-router'
 import { blog } from '../../assets/data/data'
 import NewsCard from '../news-card/NewsCard'
 import SearchInput from '../search-input/SearchInput'
+import TitleLine from '../title-line/TitleLine'
 import './details.css'
 import '../../index.css'
 
@@ -45,9 +46,8 @@ const DetailBlog = () => {
             </div>
 
             <div className="content-right">
-              <SearchInput 
-              
-              />
+              <SearchInput />
+              <TitleLine title="Kategori" />
               <div className="category-card">
                 <NewsCard
                   imageUrl="../../../images/category/img-kategori-kabar-umrah-haji.webp"

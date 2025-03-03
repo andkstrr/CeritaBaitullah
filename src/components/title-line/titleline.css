@@ -1,0 +1,32 @@
+.title-line-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    gap: 5px;
+  }
+  
+  .title-line {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f3d1f; /* Warna teks hijau tua */
+    margin: 0;
+  }
+  
+  .underline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .underline-left {
+    width: 70px; /* Sesuaikan panjang garis hijau */
+    height: 4px;
+    background-color: #1f3d1f; /* Warna hijau */
+  }
+  
+  .underline-right {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #505050; /* Warna abu-abu */
+    margin-left: 5px;
+  }
+  
