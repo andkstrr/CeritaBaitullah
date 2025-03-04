@@ -12,3 +12,6 @@
     font-weight: 500;
 }
 
+.media-container:hover {
+    background-color: #133418;
+}

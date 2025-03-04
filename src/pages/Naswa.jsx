@@ -1,5 +1,5 @@
 import React from 'react'
-import Author from '../../components/show-author/Author'
+import Author from '../components/show-author/Author'
 
 const Naswa = () => {
   return (

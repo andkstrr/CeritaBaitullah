@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowCategory from '../../components/show-category/ShowCategory'
+import ShowCategory from '../components/show-category/ShowCategory'
 
 const BlogCategory = () => {
   return (

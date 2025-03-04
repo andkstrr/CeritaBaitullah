@@ -1,0 +1,69 @@
+.headerBlog {
+    margin-bottom: 20px;
+  }
+  
+  .btn-category {
+    display: inline-block;
+    background-color: #1e441e; 
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1px 13px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #153807; 
+    margin: 10px 0;
+  }
+  
+  .credit {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .author,
+  .date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .author-name {
+    text-decoration: none;
+    color: rgb(105, 105, 105);
+    font-weight: 500;
+    transition: 0.2s;
+  }
+
+  .author-name:hover {
+    color: #153807;
+    font-weight: 600;
+  }
+  
+  .blog-cover {
+    margin: 20px 0;
+  }
+  
+  .blog-cover img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  
+  .desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  

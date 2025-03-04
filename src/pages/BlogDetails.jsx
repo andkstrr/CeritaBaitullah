@@ -1,5 +1,5 @@
 import React from 'react'
-import ShowDetail from '../../components/show-detail/ShowDetail'
+import ShowDetail from '../components/show-detail/ShowDetail'
 
 const Details = () => {
   return (

@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-md-9 {
+    flex: 0 0 70%;
+    max-width: 70%;
+}
+
+.col-md-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin-left: 30px;
+}
+
+@media (max-width: 992px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-md-3 {
+    margin-left: 0;
+  }
+  .col-md-9, .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
